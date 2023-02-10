@@ -1,0 +1,86 @@
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tesla</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+ <body>
+<div class="header" id="header">
+<nav>
+<img src="images/telogo.png" class="logo">
+<ul>
+<li><a href="#" id="models">Model S</a></li>
+<li><a href="#" id="model3">Model 3</a></li>
+<li><a href="#" id="modelx">Model X</a></li>
+<li><a href="#" id="modely">Model Y</a></li>
+</ul>
+<a href="https://www.tesla.com/models" class="btn">Book Now</a>
+</nav>
+</div>
+
+ <div class="info">
+	<div>
+		<h2 id="i">1.9s</h2>
+		<p>60 mph</p>
+	</div>
+	<div>
+		<h2 id="i1">200 mph</h2>
+		<p>Top Speed</p>
+	</div>
+	<div>
+		<h2 id="i2">396 miles</h2>
+		<p>Max Range</p>
+	</div>
+	<div class="line">
+	</div>
+    <div>
+		<h2 id="model">Model S</h2>
+	</div>
+
+</div>
+
+	 <script>
+	var header = document.getElementById ("header");
+	var ms = document.getElementById("models");
+	var m3 = document.getElementById("model3");
+	var mx = document.getElementById("modelx");
+	var my=document.getElementById ("modely");
+	var model =document.getElementById("model");
+	var ni1=document.getElementById("i");
+	var ni2=document.getElementById("i1");
+	var ni3=document.getElementById("i2");
+     
+		ms.onclick = function(){
+		header.style.backgroundImage="url(images/image-1.png)";
+		model.innerHTML = "Model S";	
+		}
+		m3.onclick = function(){
+		header.style.backgroundImage ="url(images/image-2.png)";
+		model.innerHTML = "Model 3";
+		ni1.innerHTML="3.1s";	
+		ni2.innerHTML="162 mph";
+		ni3.innerHTML="358 miles";	
+		}
+		mx.onclick = function(){
+		header.style.backgroundImage = "url(images/image-3.png)";		
+		model.innerHTML = "Model X";
+		ni1.innerHTML="2.5s";
+		ni2.innerHTML="163 mph";
+		ni3.innerHTML="333 miles";	
+
+		}
+		my.onclick = function(){
+		header.style.backgroundImage = "url(images/image-4.png)";
+		model.innerHTML = "Model Y";
+		ni1.innerHTML="3.5s";
+		ni2.innerHTML="155 mph";
+		ni3.innerHTML="303 miles";		
+		}
+</script
+
+
+
+>
+</body>
+</html>
+
